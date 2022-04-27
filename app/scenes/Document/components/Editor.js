@@ -96,7 +96,7 @@ class DocumentEditor extends React.Component<Props> {
           onGoToNextInput={this.handleGoToNextInput}
           onChange={onChangeTitle}
         />
-        {!shareId && (
+        {/* {!shareId && (
           <DocumentMetaWithViews
             isDraft={isDraft}
             document={document}
@@ -107,7 +107,7 @@ class DocumentEditor extends React.Component<Props> {
                 : false
             }
           />
-        )}
+        )} */}
         <EditorComponent
           ref={innerRef}
           autoFocus={!!title && !this.props.defaultValue}

@@ -43,9 +43,7 @@ function UserDelete({ onRequestClose }: Props) {
           <HelpText>
             <Trans>
               Are you sure? Deleting your account will destroy identifying data
-              associated with your user and cannot be undone. You will be
-              immediately logged out of Outline and all your API tokens will be
-              revoked.
+              associated with your user and cannot be undone.
             </Trans>
           </HelpText>
           <HelpText>

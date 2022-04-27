@@ -27,7 +27,7 @@ function HoverPreviewDocument({ url, children }: Props) {
   return children(
     <Content to={document.url}>
       <Heading>{document.titleWithDefault}</Heading>
-      <DocumentMetaWithViews isDraft={document.isDraft} document={document} />
+      {/* <DocumentMetaWithViews isDraft={document.isDraft} document={document} /> */}
 
       <React.Suspense fallback={<div />}>
         <Editor

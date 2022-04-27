@@ -410,19 +410,19 @@ function DocumentMenu({
               to: isRevision
                 ? documentUrl(document)
                 : documentHistoryUrl(document),
-              visible: canViewHistory,
+              visible: !!can.update,
               icon: <HistoryIcon />,
             },
             {
               title: t("Download"),
               onClick: document.download,
-              visible: !!can.download,
+              visible: !!can.update,
               icon: <DownloadIcon />,
             },
             {
               title: t("Print"),
               onClick: handlePrint,
-              visible: !!showPrint,
+              visible: !!can.update,
               icon: <PrintIcon />,
             },
           ]}

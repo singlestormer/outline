@@ -102,44 +102,47 @@ function Notifications() {
       )}
       <HelpText>
         <Trans>
-          Manage when and where you receive email notifications from Outline.
-          Your email address can be updated in your SSO provider.
+          Manage when and where you receive email notifications from Western Fetish on updates and comments to our Training Content
         </Trans>
       </HelpText>
 
       {env.EMAIL_ENABLED ? (
-        <>
-          <Input
-            type="email"
-            value={user.email}
-            label={t("Email address")}
-            readOnly
-            short
-          />
+         <Notice>
+         <Trans>
+           Level 2 members are not able to view comments and updates made by our community of Dominatrixes. Your direct point of contact will provide updates on a need to know basis.
+         </Trans>
+       </Notice>
+          //  <Input
+          //   type="email"
+          //   value={user.email}
+          //   label={t("Email address")}
+          //   readOnly
+          //   short
+          // />
 
-          <Subheading>{t("Notifications")}</Subheading>
+          // <Subheading>{t("Notifications")}</Subheading> */}
 
-          {options.map((option, index) => {
-            if (option.separator) {
-              return <Separator key={`separator-${index}`} />;
-            }
+          //  {options.map((option, index) => {
+          //   if (option.separator) {
+          //     return <Separator key={`separator-${index}`} />;
+          //   }
 
-            const setting = notificationSettings.getByEvent(option.event);
+          //   const setting = notificationSettings.getByEvent(option.event);
 
-            return (
-              <NotificationListItem
-                key={option.event}
-                onChange={handleChange}
-                setting={setting}
-                disabled={
-                  (setting && setting.isSaving) ||
-                  notificationSettings.isFetching
-                }
-                {...option}
-              />
-            );
-          })}
-        </>
+          //   return (
+          //     <NotificationListItem
+          //       key={option.event}
+          //       onChange={handleChange}
+          //       setting={setting}
+          //       disabled={
+          //         (setting && setting.isSaving) ||
+          //         notificationSettings.isFetching
+          //       }
+          //       {...option}
+          //     />
+          //   );
+          // })} 
+       
       ) : (
         <Notice>
           <Trans>

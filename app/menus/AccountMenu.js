@@ -53,13 +53,7 @@ function AccountMenu(props: Props) {
 
     return [
       navigateToSettings,
-      openKeyboardShortcuts,
-      openAPIDocumentation,
       separator(),
-      openChangelog,
-      openFeedbackUrl,
-      openBugReportUrl,
-      development,
       changeTheme,
       separator(),
       ...(otherSessions.length

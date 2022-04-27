@@ -39,24 +39,9 @@ export default ({ unsubscribeUrl }: Props) => {
     <Table width="100%">
       <TBody>
         <TR>
-          <TD style={footerStyle}>
-            <a href={process.env.URL} style={linkStyle}>
-              Outline
-            </a>
-            <a href={twitterUrl()} style={externalLinkStyle}>
-              Twitter
-            </a>
-          </TD>
+          
         </TR>
-        {unsubscribeUrl && (
-          <TR>
-            <TD style={unsubStyle}>
-              <a href={unsubscribeUrl} style={linkStyle}>
-                Unsubscribe from these emails
-              </a>
-            </TD>
-          </TR>
-        )}
+    
       </TBody>
     </Table>
   );

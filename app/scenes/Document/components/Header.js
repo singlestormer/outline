@@ -196,7 +196,7 @@ function DocumentHeader({
             {!isPublishing && isSaving && !team.collaborativeEditing && (
               <Status>{t("Saving")}…</Status>
             )}
-            <Collaborators document={document} />
+            {/* <Collaborators document={document} /> */}
             {isEditing && !isTemplate && isNew && (
               <Action>
                 <TemplatesMenu
@@ -205,11 +205,11 @@ function DocumentHeader({
                 />
               </Action>
             )}
-            {!isEditing && (!isMobile || !isTemplate) && (
+            {/* {!isEditing && (!isMobile || !isTemplate) && (
               <Action>
                 <ShareButton document={document} />
               </Action>
-            )}
+            )} */}
             {isEditing && (
               <>
                 <Action>

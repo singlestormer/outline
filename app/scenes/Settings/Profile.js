@@ -110,15 +110,6 @@ const Profile = () => {
           note={
             <Trans>
               Please note that translations are currently in early access.
-              <br />
-              Community contributions are accepted though our{" "}
-              <a
-                href="https://translate.getoutline.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                translation portal
-              </a>
             </Trans>
           }
           short

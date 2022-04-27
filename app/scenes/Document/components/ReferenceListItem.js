@@ -87,9 +87,9 @@ function ReferenceListItem({
           ? document.title.replace(new RegExp(`^${document.emoji}`), "")
           : document.title}
       </Title>
-      {document.updatedBy && (
+      {/* {document.updatedBy && (
         <DocumentMeta document={document} showCollection={showCollection} />
-      )}
+      )} */}
     </DocumentLink>
   );
 }

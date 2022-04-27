@@ -80,6 +80,7 @@ function SettingsSidebar() {
               />
             )}
           </Section>
+          {can.update && (
           <Section>
             <Header>{t("Team")}</Header>
             {can.update && (
@@ -103,23 +104,30 @@ function SettingsSidebar() {
                 label={t("Features")}
               />
             )}
+            {can.update && (
             <SidebarLink
               to="/settings/members"
               icon={<UserIcon color="currentColor" />}
               exact={false}
               label={t("Members")}
             />
+            )}
+            {can.update && (
             <SidebarLink
               to="/settings/groups"
               icon={<GroupIcon color="currentColor" />}
               exact={false}
               label={t("Groups")}
             />
+            )}
+
+            {can.update && (
             <SidebarLink
               to="/settings/shares"
               icon={<LinkIcon color="currentColor" />}
               label={t("Share Links")}
             />
+            )}
             {can.export && (
               <SidebarLink
                 to="/settings/import-export"
@@ -128,6 +136,7 @@ function SettingsSidebar() {
               />
             )}
           </Section>
+          )}
           {can.update && (env.SLACK_KEY || isHosted) && (
             <Section>
               <Header>{t("Integrations")}</Header>

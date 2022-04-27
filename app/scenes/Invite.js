@@ -121,6 +121,8 @@ function Invite({ onSubmit }: Props) {
   }, []);
 
   return (
+    <>
+    {can.update ? (
     <form onSubmit={handleSubmit}>
       {team.guestSignin ? (
         <HelpText>
@@ -232,6 +234,12 @@ function Invite({ onSubmit }: Props) {
       </Flex>
       <br />
     </form>
+    ) : (
+      <HelpText>
+      <Trans> Only Level 3 members can invite others directly into the Training Platform </Trans>
+    </HelpText>
+    )}
+    </>
   );
 }
 

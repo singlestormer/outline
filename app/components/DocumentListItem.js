@@ -115,13 +115,13 @@ function DocumentListItem(props: Props, ref) {
             processResult={replaceResultMarks}
           />
         )}
-        <DocumentMeta
+        {/* <DocumentMeta
           document={document}
           showCollection={showCollection}
           showPublished={showPublished}
           showNestedDocuments={showNestedDocuments}
           showLastViewed
-        />
+        /> */}
       </Content>
       <Actions>
         {document.isTemplate &&
