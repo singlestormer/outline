@@ -22,9 +22,9 @@ export const inviteEmailText = ({
   actorEmail,
   teamUrl,
 }: Props) => `
-An Invite to Western Fetish's Training Platform
+An Invite to Fetish Circle's Training Platform
 
-${actorName} (${actorEmail}) has invited you to join Western Fetish's Training Platform.
+${actorName} (${actorEmail}) has invited you to join Fetish Circle's Training Platform.
 
 Join now: ${teamUrl}
 `;
@@ -40,9 +40,9 @@ export const InviteEmail = ({
       <Header />
 
       <Body>
-        <Heading>An Invite to Western Fetish's Training Platform</Heading>
+        <Heading>An Invite to Fetish Circle's Training Platform</Heading>
         <p>
-          {actorName} ({actorEmail}) has invited you to join Western Fetish's Training Platform.
+          {actorName} ({actorEmail}) has invited you to join Fetish Circle's Training Platform.
         </p>
         <EmptySpace height={10} />
         <p>

@@ -164,7 +164,7 @@ export class Mailer {
   welcome = async (opts: { to: string, teamUrl: string }) => {
     this.sendMail({
       to: opts.to,
-      title: "Welcome to Western Fetish's Training Platform",
+      title: "Welcome to Fetish Circle's Training Platform",
       previewText:
         "Our Training Platform contains all the content you need to break your submissives down.",
       html: <WelcomeEmail {...opts} />,
@@ -195,7 +195,7 @@ export class Mailer {
   invite = async (opts: { to: string } & InviteEmailT) => {
     this.sendMail({
       to: opts.to,
-      title: `${opts.actorName} invited you to join Western Fetish's Training Platform`,
+      title: `${opts.actorName} invited you to join Fetish Circle's Training Platform`,
       previewText:
         "Learn and Grow as a Domme.",
       html: <InviteEmail {...opts} />,
@@ -207,7 +207,7 @@ export class Mailer {
     this.sendMail({
       to: opts.to,
       title: "Magic signin link",
-      previewText: "Here’s your link to signin to Western Fetish's Training Platform.",
+      previewText: "Here’s your link to signin to Fetish Circle's Training Platform.",
       html: <SigninEmail {...opts} />,
       text: signinEmailText(opts),
     });

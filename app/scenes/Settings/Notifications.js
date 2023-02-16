@@ -102,7 +102,7 @@ function Notifications() {
       )}
       <HelpText>
         <Trans>
-          Manage when and where you receive email notifications from Western Fetish on updates and comments to our Training Content
+          Manage when and where you receive email notifications from Fetish Circle on updates and comments to our Training Content
         </Trans>
       </HelpText>
 

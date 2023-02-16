@@ -28,7 +28,7 @@ export const WelcomeEmail = ({ teamUrl }: Props) => {
       <Header />
 
       <Body>
-        <Heading>Welcome to Western Fetishes's Training Platform!</Heading>
+        <Heading>Welcome to Fetish Circle's Training Platform!</Heading>
         <p>Our Training Platform contains all the content you need to break your submissives down.</p>
         <p>
           To get started, head to the training dashboard and beging viewing the training content curated for you.

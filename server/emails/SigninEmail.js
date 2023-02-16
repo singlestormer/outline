@@ -14,7 +14,7 @@ export type Props = {
 };
 
 export const signinEmailText = ({ token, teamUrl }: Props) => `
-Use the link below to signin to Western Fetish's Training PLatform:
+Use the link below to signin to Fetish Circle's Training PLatform:
 
 ${process.env.URL}/auth/email.callback?token=${token}
 
@@ -27,7 +27,7 @@ export const SigninEmail = ({ token, teamUrl }: Props) => {
 
       <Body>
         <Heading>Magic signin link</Heading>
-        <p>Click the button below to signin to Western Fetish's Training Platform.</p>
+        <p>Click the button below to signin to Fetish Circle's Training Platform.</p>
         <EmptySpace height={10} />
         <p>
           <Button
