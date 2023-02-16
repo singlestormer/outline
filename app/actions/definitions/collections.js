@@ -35,7 +35,7 @@ export const createCollection = createAction({
   icon: <PlusIcon />,
   keywords: "create",
   visible: ({ stores }) =>
-  stores.policies.abilities(activeCollectionId).update,
+    stores.policies.abilities(stores.auth.team?.id || "").createCollection,
   perform: ({ t, event }) => {
     event?.preventDefault();
     event?.stopPropagation();
